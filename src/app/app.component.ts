@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'neon';
+  text = 'neon';
+  swap(event)
+  {
+    console.log('fired with ',event);
+
+    this.text=event;
+  }
 }
